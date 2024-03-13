@@ -1,10 +1,25 @@
-import './App.css'
+import Square from "./components/square";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  )
+function Board() {
+    return (
+        <>
+            <div className="board-row">
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+            <div className="board-row">
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+            <div className="board-row">
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+        </>
+    );
 }
 
-export default App
+export default Board;
